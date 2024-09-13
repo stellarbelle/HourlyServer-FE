@@ -1,0 +1,19 @@
+mutation updateServer($name: String!, $serverId: String!, $cpu: Float!, $memory: Float!, $settings: [ServerSettingInput!]) {
+    updateServer(name: $name, serverId: $serverId, cpu: $cpu, memory: $memory, settings: $settings) {
+        name
+        serverID
+        status
+        cpu
+        memory
+        serverTypeID
+        ports {
+            port
+            protocol
+        }
+        settings {
+            serverSettingKey
+            value
+        }
+        suspend
+    }
+}

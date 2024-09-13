@@ -1,0 +1,18 @@
+mutation createServer($name: String!, $serverTypeId: String!, $cpu: Float!, $memory: Float!, $settings: [ServerSettingInput!]) {
+    createServer(name: $name, serverTypeId: $serverTypeId, cpu: $cpu, memory: $memory, settings: $settings) {
+        name
+        serverID
+        status
+        cpu
+        ports {
+            port
+            protocol
+        }
+        memory
+        serverTypeID
+        settings {
+            value
+        }
+        suspend
+    }
+}

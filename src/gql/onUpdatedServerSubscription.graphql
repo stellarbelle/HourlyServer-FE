@@ -1,0 +1,25 @@
+subscription server($serverId: String!) {
+    server(serverID: $serverId) {
+        serverID
+        name
+        status
+        serverTypeID
+        memory
+        cpu
+        suspend
+        ipAddress
+        needsRestart
+        dateCreated
+        dateLastUpdated
+        dateLastStopped
+        dateLastStarted
+        settings {
+            serverSettingKey
+            value
+        }
+        ports {
+            protocol
+            port
+        }
+    }
+  }

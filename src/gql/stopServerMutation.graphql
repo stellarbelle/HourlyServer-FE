@@ -1,0 +1,6 @@
+mutation stopServer($serverId: String!) {
+    stopServer(serverId: $serverId) {
+        serverID
+        status
+    }
+}

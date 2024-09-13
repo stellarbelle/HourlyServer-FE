@@ -1,0 +1,25 @@
+query getServerTypes {
+    serverTypes {
+        nodes {
+            __typename
+            name
+            serverTypeID
+            fields {
+                __typename
+                serverSettingKey
+                label
+                description
+                default
+                ... on SelectionServerField {
+                    options {
+                        value
+                    }
+                }
+            }
+            resourcesPerPlayer {
+                cpu
+                memory
+            }
+        }
+    }
+}

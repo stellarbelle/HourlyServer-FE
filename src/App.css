@@ -1,0 +1,322 @@
+.App {
+  text-align: center;
+  background: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  min-height: 100vh;
+}
+
+.logo {
+  background: #F8FC46;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: #000;
+  font-family: Oswald;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.logo span {
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #000;
+  font-weight: 700;
+}
+.app-header {
+  display: flex;
+  padding: 2.5rem 0;
+  justify-content: space-between;
+}
+.App-link {
+  color: #61dafb;
+}
+.new-link {
+  color: #F8FC46;
+  text-decoration: none;
+}
+/* .create-user-button {
+  background-color: #F8FC46;
+  position: absolute;
+  top: 30rem;
+  left: 17.25rem;
+  border: none;
+  width: 220px;
+  height: 60px;
+} */
+.wrapper {
+  flex-direction: column;
+  padding-bottom: 12.5rem;
+  padding-right: 15rem;
+  padding-left: 15rem;
+  width: -webkit-fill-available;
+  min-height: 100vh;
+  min-width: -webkit-min-content;
+}
+
+.content {
+  background: #222931;
+  color: #FFFFFF;
+  text-align: left;
+  display: inline-flex;
+  min-height: 600px;
+  padding: 3.25rem 2.625rem;
+  flex-direction: column;
+  gap: 60px;
+  align-self: stretch;
+  align-items: center;
+}
+.title {
+  font-family: Oswald;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 89.6px;
+}
+.box {
+  padding: 2.5rem 2rem;
+  border: 1px 0px 0px 0px;
+  background: black;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 29rem;
+}
+ul {
+  justify-content: start;
+}
+.form-wrapper, form {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rules {
+  padding: 20px 40px 20px 40px;
+  border: 3px 0px 0px 0px;
+}
+label {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+h1, h2, h3 {
+  font-family: Oswald;
+  font-size: 4rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+hr {
+  width: 100%;
+  margin: 3.75rem 0;
+}
+
+.create-server-button {
+  border: none;
+  width: 13.75rem;
+  height: 3.75rem;
+  background-color: #F8FC46;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.server-menu {
+  margin-top: 15px;
+}
+
+.server-menu select {
+  width: 99px;
+  color: white;
+  background: none;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.server-menu select:focus-visible { 
+  outline: none;
+}
+
+.server-menu option {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.servers-header { 
+  width: 100%;
+  font-size: 1.13rem;
+}
+.servers-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+  flex-direction: row;
+}
+.server-name {
+  color: #F8FC46;
+  text-decoration: underline; 
+}
+.server-table {
+  border-collapse: collapse;
+  background: black;
+  border: 1px solid #666666;
+  font-family: "Lato", sans-serif;
+}
+
+.server-table td, .server-table th {
+  padding: 25px 35px;
+  border: 1px solid #666666;
+  text-align: center;
+  font-size: 1.13rem;
+}
+.server-table th {
+  font-size: 20px;
+}
+.server-status-running {
+  background-color: #23763B;
+}
+.server-status, .server-action {
+  background-color: #666666;
+  display: flex;
+  align-items: center;
+  width: 87px;
+  height: 37px;
+  margin: auto;
+}
+
+.server-action {
+  font-weight: 700;
+  border: none;
+  font-size: 18px;
+  display: block;
+  width: 155px;
+  line-height: 2;
+  background: none;
+  border: 2px solid white;
+}
+
+.stopped {
+  background-color: #862121;
+  border: none;
+}
+.started {
+  background-color: #F8FC46;
+  border: none;
+}
+.server-status  span {
+  margin: auto;
+}
+
+.server-ip {
+  font-size: 16px;
+  width: 1%;
+  white-space: nowrap;
+  margin-top: 15px;
+}
+
+.user-link {
+  color: #F8FC46;
+  text-decoration: none;
+  margin-left: 7px;
+}
+
+.back-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+input, select {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  height: 1.5rem;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 22.4px;
+}
+.pass-input {
+  position: absolute;
+  width: -webkit-fill-available;
+}
+
+.show-icon {
+  background: white;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+  height:55px;
+}
+
+.submit-button {
+  background: #F8FC46;
+  padding: 8px 16px;
+  width: 50%;
+  align-self: flex-end;
+  margin-top: 45px;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.server-type, .server-typeselected {
+  width: 16.25rem;
+  height: 5rem;
+  background-color: #000;
+  margin: 0 15px 15px 0;
+  margin-top: 0;
+  color: #FFFFFF;
+  border: 3px solid #000;
+  opacity: 60%;
+  font-size: 1.75rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-align: start;
+  padding: 0 16px;
+}
+.server-type.selected {
+  border: 3px solid #F8FC46;
+  opacity: 100%;
+}
+.server-type.last {
+  margin-right: 0;
+}
+.type-list {
+  display:flex;
+  flex-wrap:wrap;
+  align-content:flex-start;
+  flex-direction: row;
+  margin-top: 0.625rem
+}
+.error-msg {
+  color: #C4001F;
+  width: 50%;
+}
+
+button {
+  cursor: pointer;
+}

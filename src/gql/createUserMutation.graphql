@@ -1,0 +1,26 @@
+mutation createUser($emailAddress: String!, $password: String!) {
+    createUser(emailAddress: $emailAddress, password: $password) {
+        __typename
+        authToken
+        userID
+        servers {
+            serverID
+            name
+            status
+            serverTypeID
+            memory
+            cpu
+            suspend
+            ipAddress
+            needsRestart
+            dateCreated
+            dateLastUpdated
+            dateLastStopped
+            dateLastStarted
+            settings {
+                serverSettingKey
+                value
+            }
+        }
+    }
+}

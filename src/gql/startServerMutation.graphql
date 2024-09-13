@@ -1,0 +1,6 @@
+mutation startServer($serverId: String!) {
+    startServer(serverId: $serverId) {
+        serverID
+        status
+    }
+}
